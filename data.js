@@ -63,6 +63,14 @@ export const projects = [
         demoLink: 'https://dilipbist.github.io/E-commerce-website/index.html',
         codeLink: 'https://github.com/DilipBist/E-commerce-website'
     },
+    {
+        type: 'main',
+        title: 'Electronic Product Selling',
+        image: 'image/electronic.png',
+        languages: ['React', 'Tailwind CSS', 'Responsive Design'],
+        demoLink: 'https://electronic-e-commerce.vercel.app/',
+        codeLink: 'https://github.com/DilipBist/Electronic-e-commerce'
+    },
    
     {
         type: 'main',
