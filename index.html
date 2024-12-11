@@ -8,6 +8,9 @@
     <title>Dilip Bist </title>
     <!-- Boxicon link  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style sheets  -->
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -71,7 +74,7 @@
 
     <!-- ************ HERO SECTION STARTS HERE ************* -->
     <section class="hero_section container">
-        <div class="hero_left">
+        <div class="hero_left" data-aos="fade-down-right" data-aos-duration="3000">
             <p class="name">Hey! <br>I am Dilip Bist</p>
             <p class="typing-effect capitalize occupation">
                 <span id="typed-text"></span>
@@ -94,7 +97,7 @@
             </div>
 
         </div>
-        <div class="hero_right">
+        <div class="hero_right" data-aos="fade-down-left" data-aos-duration="3000">
             <div class="profile">
                 <img src="image/profile.jpg" alt="">
             </div>
@@ -106,7 +109,7 @@
 
     <!-- ********** SKILL SECTION STARTS HERE  *********  -->
 
-    <section class="my_skills">
+    <section class="my_skills" data-aos="zoom-in-down" data-aos-duration="2000">
         <div class="background1"></div>
         <div class="container">
             <div class="skill_heading">
@@ -126,13 +129,13 @@
     <!-- *********** PROJECT SECTION STARTS HERE *********  -->
 
     <section class="project_section" id="project_section">
-        <p class="project_heading">Mini projects</p>
-        <div class="project_container container" id="mini_project_container">
+        <p class="project_heading"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">Mini projects</p>
+        <div class="project_container container" id="mini_project_container"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
 
 
         </div>
 
-        <p class="project_heading">My Projects</p>
+        <p class="project_heading" >My Projects</p>
         <div class="project_container container" id="main_project_container">
 
         </div>
@@ -143,7 +146,7 @@
 
     <!-- ************* CONTACT SECTION STARTS HERE ***********  -->
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
         <section class="project_start container">
             <div>
                 <p>want to start a frontend project with me</p>
@@ -167,7 +170,8 @@
                 <p class="contact_heading">Contact</p>
                 <div class="flex">
                     <div class="contact_content">
-                        <div class="left_contact">
+                        <div class="left_contact" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <form action="https://api.web3forms.com/submit" method="POST" class="form_bg">
                                 <input type="hidden" name="access_key" value="c62b8ca4-7169-4b53-a9dc-02258a237712">
                                 <p class="hero_heading">Let's Work together</p>
@@ -194,7 +198,8 @@
                         </div>
                     </div>
 
-                    <div class="right_content">
+                    <div class="right_content" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="phone">
                             <div class="circle"> <i class='bx bxs-phone'></i> </div>
                             <div class="p">
@@ -230,7 +235,7 @@
 
     <!-- **************** FOOTER SECTION ********* -->
     <footer>
-        <div class="container footer_content">
+        <div class="container footer_content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="logo g_20">
                 <p>D<span style="padding-left: 5px;">}</span></p>
                 <span><a href="mailto:dilipbist879@gmail.com">dilipbist879@gmail.com</a></span>
@@ -289,6 +294,9 @@
 
 
 
+    <!-- AOS js link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js link  -->
     <script type="module" src="script.js"></script>
 
 

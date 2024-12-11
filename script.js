@@ -1,5 +1,5 @@
 import { projects, renderSkills, skills } from './data.js'
-
+AOS.init();
 
 // THEME CHANGE
 const themeChange = document.querySelector('.theme_change');
