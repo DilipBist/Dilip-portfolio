@@ -78,13 +78,23 @@ export const projects = [
     },
    
     {
-        type: 'main',
+        type: 'mini',
         title: 'Food Recipe Search Website',
         smalldescription: 'Fetching data from API and also with the search functionality.',
         image: 'image/food_search.png',
         languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/Food_Recipes_Website/',
         codeLink: 'https://github.com/DilipBist/Food_Recipes_Website'
+    },
+   
+    {
+        type: 'main',
+        title: 'Ice-Cream Website',
+        smalldescription: 'Website where user can view the ice-cream details and also know about the company.',
+        image: 'image/ice.png',
+        languages: ['HTML', 'SCSS', 'Vanilla JS'],
+        demoLink: 'https://dilipbist.github.io/Ice-cream-Website/index.html',
+        codeLink: 'https://github.com/DilipBist/Ice-cream-Website'
     }
 ];
 
