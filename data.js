@@ -34,6 +34,7 @@ export const projects = [
     {
         type: 'mini',
         title: 'Todo List (JS)',
+        smalldescription: 'A basic Todo list where we can add the list with  date  and also delete the list manually.',
         image: 'image/todo.png',
         languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/Todo_List-JS-/',
@@ -42,6 +43,7 @@ export const projects = [
     {
         type: 'mini',
         title: 'Counter +/- (JS)',
+        smalldescription: 'we can increment and decrement by clicking to button and also icrement or decrement by the inputed value.',
         image: 'image/counter.png',
         languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/Counter-Mini-Project/',
@@ -49,7 +51,8 @@ export const projects = [
     },
     {
         type: 'mini',
-        title: 'News Fetching Website',
+        title: 'News Website',
+        smalldescription: 'Fetching data from API(newsapi.org) and displaying data also with some filtering pages.',
         image: 'image/newsjs.png',
         languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/News_Fetch_Website/',
@@ -60,12 +63,14 @@ export const projects = [
         title: 'E-commerce Website',
         image: 'image/s.png',
         languages: ['HTML', 'Vanilla CSS', 'Responsive Design'],
+        smalldescription: 'Users can see the products, view the product according to category (like men, women, etc).',
         demoLink: 'https://dilipbist.github.io/E-commerce-website/index.html',
         codeLink: 'https://github.com/DilipBist/E-commerce-website'
     },
     {
         type: 'main',
-        title: 'Electronic Product Selling',
+        title: 'Clone Website',
+        smalldescription: 'clone website of digitalshauji. Developed using React and TailwindCSS',
         image: 'image/electronic.png',
         languages: ['React', 'Tailwind CSS', 'Responsive Design'],
         demoLink: 'https://electronic-e-commerce.vercel.app/',
@@ -75,6 +80,7 @@ export const projects = [
     {
         type: 'main',
         title: 'Food Recipe Search Website',
+        smalldescription: 'Fetching data from API and also with the search functionality.',
         image: 'image/food_search.png',
         languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/Food_Recipes_Website/',

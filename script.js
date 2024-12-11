@@ -91,7 +91,7 @@ currentDate.innerHTML = `<b> ${year} ${month}</b>`;
 
 // TYPING EFFECT 
 const typedText = document.getElementById("typed-text");
-const text = "frontend web developer & designer";
+const text = "frontend web developer";
 let index = 0;
 let typingSpeed = 100;  // Speed for typing
 let deletingSpeed = 50;  // Speed for deleting
@@ -160,6 +160,7 @@ function renderProjectData(containerId, type)
                     </div>
                 </div>
                 <p>${project.title}</p>
+                <small>${project.smalldescription}</small>
             </div>
         `
     })
