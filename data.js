@@ -94,7 +94,7 @@ export const projects = [
         image: 'image/ice.png',
         languages: ['HTML', 'SCSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/Ice-cream-Website/index.html',
-        codeLink: 'https://github.com/DilipBist/Ice-cream-Website'
+        codeLink: 'https://ice-cream-website-seven.vercel.app/index.html'
     }
 ];
 
