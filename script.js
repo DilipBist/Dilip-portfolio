@@ -93,9 +93,9 @@ currentDate.innerHTML = `<b> ${year} ${month}</b>`;
 const typedText = document.getElementById("typed-text");
 const text = "frontend web developer";
 let index = 0;
-let typingSpeed = 100;  // Speed for typing
+let typingSpeed = 200;  // Speed for typing
 let deletingSpeed = 50;  // Speed for deleting
-let pauseDuration = 100; // Duration to pause after typing the full text
+let pauseDuration = 500; // Duration to pause after typing the full text
 
 if (typedText) { // Check if element exists
     function type() {
