@@ -93,8 +93,8 @@ export const projects = [
         smalldescription: 'Website where user can view the ice-cream details and also know about the company.',
         image: 'image/ice.png',
         languages: ['HTML', 'SCSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/Ice-cream-Website/index.html',
-        codeLink: 'https://ice-cream-website-seven.vercel.app/index.html'
+        demoLink: 'https://ice-cream-website-seven.vercel.app/',
+        codeLink: 'https://github.com/DilipBist/Ice-cream-Website'
     }
 ];
 
