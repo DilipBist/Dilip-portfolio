@@ -4,7 +4,7 @@ export const skills = [
     { name: 'CSS', image: './image/css.png', percentage: '90%' },
     { name: 'SASS', image: './image/sass.png', percentage: '90%' },
     { name: 'Bootstrap', image: './image/bootstrap.png', percentage: '60%' },
-    { name: 'Tailwind', image: './image/tailwind.png', percentage: '70%' },
+    { name: 'Tailwind', image: './image/tailwind.png', percentage: '95%' },
     { name: 'JavaScript', image: './image/js.png', percentage: '60%' },
     { name: 'jQuery', image: './image/jquery.png', percentage: '60%' },
     { name: 'React', image: './image/react.png', percentage: '70%' }
