@@ -95,6 +95,15 @@ export const projects = [
         languages: ['HTML', 'SCSS', 'Vanilla JS'],
         demoLink: 'https://ice-cream-website-seven.vercel.app/',
         codeLink: 'https://github.com/DilipBist/Ice-cream-Website'
+    },
+    {
+        type: 'main',
+        title: 'Home Page Desing ',
+        smalldescription: 'Home page desing of the car rentail and service website design',
+        image: 'image/homepagedesign.png',
+        languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
+        demoLink: 'https://dilipbist.github.io/clone/',
+        codeLink: 'https://github.com/DilipBist/clone'
     }
 ];
 
