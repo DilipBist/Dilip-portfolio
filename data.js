@@ -102,8 +102,8 @@ export const projects = [
         smalldescription: 'Home page desing of the car rentail and service website design',
         image: 'image/homepagedesign.png',
         languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/clone/',
-        codeLink: 'https://github.com/DilipBist/clone'
+        demoLink: 'https://dilipbist.github.io/CarRental-HomePage/',
+        codeLink: 'https://github.com/DilipBist/CarRental-HomePage'
     }
 ];
 
