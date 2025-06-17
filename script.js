@@ -139,6 +139,7 @@ function renderProjectData(containerId, type)
         });
         languageHtml += '</p>';
 
+        let companyName = project.company ?  `<p class="company_name">Company: <a href="https://megaweblink.com.np/">${project.company}</a> </p>` : "";
 
         projectHtml += `
         <div class="product_list_parent">
@@ -159,7 +160,8 @@ function renderProjectData(containerId, type)
                         </div>
                     </div>
                 </div>
-                <p>${project.title}</p>
+                ${companyName}
+                <p>${project.title} </p>
                 <small>${project.smalldescription}</small>
             </div>
         `

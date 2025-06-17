@@ -112,7 +112,8 @@ export const projects = [
         image: 'image/galway.png',
         languages: ['HTML', 'Bootstrap', 'jQuery'],
         demoLink: 'https://galwaywebdesigns.ie/',
-        codeLink: '#'
+        codeLink: '#',
+        company: "Megaweblink"
     },
 ];
 
