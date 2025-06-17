@@ -91,7 +91,7 @@ currentDate.innerHTML = `<b> ${year} ${month}</b>`;
 
 // TYPING EFFECT 
 const typedText = document.getElementById("typed-text");
-const text = "frontend web developer";
+const text = "Frontend Web Developer & Designer";
 let index = 0;
 let typingSpeed = 200;  // Speed for typing
 let deletingSpeed = 50;  // Speed for deleting
@@ -167,6 +167,8 @@ function renderProjectData(containerId, type)
     
     projectContainer.innerHTML = projectHtml;
 }
-renderProjectData('mini_project_container', 'mini');
-renderProjectData('main_project_container', 'main');
-renderProjectData('real_project_container', 'real');
+document.addEventListener("DOMContentLoaded", function() {
+    renderProjectData('mini_project_container', 'mini');
+    renderProjectData('main_project_container', 'main');
+    renderProjectData('real_project_container', 'real');
+});
