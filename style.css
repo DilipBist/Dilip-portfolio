@@ -725,7 +725,7 @@ footer {
 }
 
 /* ************** Media queries for RESPONSIVE DESIGN ***********  */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .project_section .project_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
