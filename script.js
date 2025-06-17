@@ -169,3 +169,4 @@ function renderProjectData(containerId, type)
 }
 renderProjectData('mini_project_container', 'mini');
 renderProjectData('main_project_container', 'main');
+renderProjectData('real_project_container', 'real');

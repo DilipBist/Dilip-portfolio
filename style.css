@@ -222,7 +222,9 @@ nav .nav_links li a:hover::before {
     font-size: 50px;
     transition: all .5s ease;
 }
-
+a{
+    color: inherit;
+}
 
 /* ****************** Header section CSS ends *********  */
 
@@ -238,7 +240,7 @@ nav .nav_links li a:hover::before {
 }
 
 .hero_section .hero_left .occupation {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     padding: 10px 0;
     background: var(--text-gradient);
@@ -318,7 +320,8 @@ nav .nav_links li a:hover::before {
 
 .hero_right .profile img {
     width: 100%;
-    aspect-ratio: 1;
+    height: 100%;
+    object-position: top;
     object-fit: cover;
 }
 
@@ -345,8 +348,9 @@ nav .nav_links li a:hover::before {
 }
 .project_section .project_container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 400px));
+    gap: 32px;
+    justify-content: center;
 }
 .product_list_parent{
     display: flex;
@@ -693,7 +697,12 @@ footer {
 
     }
 }
-
+.self_description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 1.8;
+}
 
 /* ************** Media queries for RESPONSIVE DESIGN ***********  */
 @media (max-width: 1025px) {

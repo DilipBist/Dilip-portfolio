@@ -3,11 +3,11 @@ export const skills = [
     { name: 'HTML', image: './image/html.png', percentage: '95%' },
     { name: 'CSS', image: './image/css.png', percentage: '90%' },
     { name: 'SASS', image: './image/sass.png', percentage: '90%' },
-    { name: 'Bootstrap', image: './image/bootstrap.png', percentage: '60%' },
-    { name: 'Tailwind', image: './image/tailwind.png', percentage: '95%' },
+    { name: 'Bootstrap', image: './image/bootstrap.png', percentage: '95%' },
+    { name: 'Tailwind', image: './image/tailwind.png', percentage: '80%' },
     { name: 'JavaScript', image: './image/js.png', percentage: '60%' },
     { name: 'jQuery', image: './image/jquery.png', percentage: '60%' },
-    { name: 'React', image: './image/react.png', percentage: '70%' }
+    { name: 'React', image: './image/react.png', percentage: '60%' }
 ];
 
 export function renderSkills(skills) {
@@ -104,6 +104,15 @@ export const projects = [
         languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
         demoLink: 'https://dilipbist.github.io/CarRental-HomePage/',
         codeLink: 'https://github.com/DilipBist/CarRental-HomePage'
-    }
+    },
+        {
+        type: 'real',
+        title: 'Galway Web Desing',
+        smalldescription: 'Ireland-based website design company that offers professional website design and management on a monthly payment basis.',
+        image: 'image/galway.png',
+        languages: ['HTML', 'Bootstrap', 'jQuery'],
+        demoLink: 'https://galwaywebdesigns.ie/',
+        codeLink: '#'
+    },
 ];
 
