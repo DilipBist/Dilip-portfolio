@@ -47,7 +47,8 @@ html {
 
 
 .container {
-    width: 85%;
+    max-width: 1450px;
+    width: 90%;
     margin: auto;
     z-index: 1;
 }
