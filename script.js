@@ -126,50 +126,54 @@ renderSkills(skills);
 
 
 // load the projects usign JavaScript 
-function renderProjectData(containerId, type)
-{
+function renderProjectData(containerId, type) {
     let projectContainer = document.getElementById(containerId);
     let projectHtml = '';
-    projects.filter(project=> project.type === type).forEach(project=>{
 
-        //* generating the language HTML dymanically 
-        let languageHtml = '<p class="language_used">';
-        project.languages.forEach(language => {
-            languageHtml += `<span>${language}</span>`;
-        });
-        languageHtml += '</p>';
+    // Filter and loop through projects
+    projects
+        .filter(project => project.type === type)
+        .forEach((project, index) => {
+            let languageHtml = '<p class="language_used">';
+            project.languages.forEach(language => {
+                languageHtml += `<span>${language}</span>`;
+            });
+            languageHtml += '</p>';
 
-        let companyName = project.company ?  `<p class="company_name">Company: <a href="https://megaweblink.com.np/">${project.company}</a> </p>` : "";
+            let companyName = project.company
+                ? `<p class="company_name">Company: <a href="https://megaweblink.com.np/">${project.company}</a></p>`
+                : "";
 
-        projectHtml += `
-        <div class="product_list_parent">
+            // Add AOS fade-up animation with staggered delay
+            projectHtml += `
+            <div class="product_list_parent" 
+                 data-aos="fade-up" 
+                 data-aos-duration="1000" 
+                 data-aos-delay="${index * 200}">
                 <div class="project_list">
                     <img src="${project.image}" alt="">
                     <div class="product_content">
                         ${languageHtml}
                         <div class="code_btn">
-                            <button>
-                             <a href="${project.demoLink}"
-                             target="_blank">project demo</a>
-                            </button>
-                            <button>
-                             <a href="${project.codeLink}"
-                             target="_blank">source
-                                    code</a>
-                            </button>
+                            <button><a href="${project.demoLink}" target="_blank">project demo</a></button>
+                            <button><a href="${project.codeLink}" target="_blank">source code</a></button>
                         </div>
                     </div>
                 </div>
                 ${companyName}
-                <p>${project.title} </p>
+                <p>${project.title}</p>
                 <small>${project.smalldescription}</small>
             </div>
-        `
-    })
-    
+            `;
+        });
+
     projectContainer.innerHTML = projectHtml;
+
+    // Reinitialize AOS after adding new elements
+    AOS.refresh();
 }
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     renderProjectData('mini_project_container', 'mini');
     renderProjectData('main_project_container', 'main');
     renderProjectData('real_project_container', 'real');

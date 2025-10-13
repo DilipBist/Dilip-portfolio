@@ -12,22 +12,28 @@ export const skills = [
 
 export function renderSkills(skills) {
     let skillHtml = '';
-    skills.forEach((skill) => {
-        skillHtml += `
-        <div class="flex_center">
-        <div class="tool_icon">
-        <img src="${skill.image}" alt="">
-        <p>${skill.percentage}</p>
-        </div>
-        <p>${skill.name}</p>
-        </div>
-        
-        `
-    })
 
+    skills.forEach((skill, index) => {
+        skillHtml += `
+        <div class="flex_center" 
+             data-aos="fade-up" 
+             data-aos-duration="800" 
+             data-aos-delay="${index * 150}">
+            <div class="tool_icon">
+                <img src="${skill.image}" alt="">
+            </div>
+            <p>${skill.name}</p>
+        </div>
+        `;
+    });
+//  <p>${skill.percentage}</p>
     const skillContainer = document.getElementById('js_skill_Container');
     skillContainer.innerHTML = skillHtml;
+
+    // Reinitialize AOS after rendering dynamic content
+    AOS.refresh();
 }
+
 
 // Array of projects
 export const projects = [
