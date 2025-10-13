@@ -125,5 +125,15 @@ export const projects = [
         codeLink: '#',
         company: "Megaweblink"
     },
+    {
+        type: 'real',
+        title: 'Manya E-commerce',
+        smalldescription: 'Manya is your one-stop e-commerce destination offering quality products, great deals, and a seamless shopping experience.',
+        image: 'image/manya.png',
+        languages: ['HTML', 'CSS/Bootstrap', 'JavaScript'],
+        demoLink: 'https://store-manya.megaweblinkinc.com/',
+        codeLink: '#',
+        company: "Megaweblink"
+    },
 ];
 
