@@ -24,7 +24,7 @@ export function renderSkills(skills) {
         
         `
     })
-    
+
     const skillContainer = document.getElementById('js_skill_Container');
     skillContainer.innerHTML = skillHtml;
 }
@@ -76,7 +76,7 @@ export const projects = [
         demoLink: 'https://electronic-e-commerce.vercel.app/',
         codeLink: 'https://github.com/DilipBist/Electronic-e-commerce'
     },
-   
+
     {
         type: 'mini',
         title: 'Food Recipe Search Website',
@@ -86,7 +86,7 @@ export const projects = [
         demoLink: 'https://dilipbist.github.io/Food_Recipes_Website/',
         codeLink: 'https://github.com/DilipBist/Food_Recipes_Website'
     },
-   
+
     {
         type: 'main',
         title: 'Ice-Cream Website',
@@ -105,13 +105,23 @@ export const projects = [
         demoLink: 'https://dilipbist.github.io/CarRental-HomePage/',
         codeLink: 'https://github.com/DilipBist/CarRental-HomePage'
     },
-        {
+    {
         type: 'real',
         title: 'Galway Web Desing',
         smalldescription: 'Ireland-based website design company that offers professional website design and management on a monthly payment basis.',
         image: 'image/galway.png',
         languages: ['HTML', 'Bootstrap', 'jQuery'],
         demoLink: 'https://galwaywebdesigns.ie/',
+        codeLink: '#',
+        company: "Megaweblink"
+    },
+    {
+        type: 'real',
+        title: 'Maatson',
+        smalldescription: 'Maatson Trucking School offers CDL training, hands-on experience, and career support for your success in trucking.',
+        image: 'image/maatson.png',
+        languages: ['HTML', 'CSS/Bootstrap', 'jQuery', 'Wordpress'],
+        demoLink: 'https://maatson.megaweblinkinc.com/',
         codeLink: '#',
         company: "Megaweblink"
     },
