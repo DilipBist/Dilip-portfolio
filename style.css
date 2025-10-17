@@ -33,7 +33,6 @@
 }
 
 body {
-    min-height: 100vh;
     background: var(--bg-primary);
     background-clip: none;
     color: var(--text-color);
@@ -114,14 +113,17 @@ header {
     opacity: .1;
     z-index: -1;
 }
-.company_name{
+
+.company_name {
     font-size: 14px !important;
     font-weight: 500 !important;
 }
-.company_name a{
+
+.company_name a {
     font-size: 16px !important;
     font-weight: 600 !important;
 }
+
 header.fixed {
     position: fixed;
     top: 0;
@@ -489,6 +491,7 @@ a {
     padding: 60px 0;
     /* text-align: center; */
     color: var(--text-color);
+    overflow: hidden;
 }
 
 .contact_content {
@@ -731,7 +734,6 @@ footer {
     gap: 16px;
     line-height: 1.8;
 }
-
 /* ************** Media queries for RESPONSIVE DESIGN ***********  */
 @media (max-width: 1400px) {
     .project_section .project_container {
@@ -916,9 +918,10 @@ footer {
 
 @media (max-width: 550px) {
 
-.project_section .project_container {
-        grid-template-columns:  1fr;
+    .project_section .project_container {
+        grid-template-columns: 1fr;
     }
+
     .hero_section {
         gap: 0px;
         padding: 40px 20px;
