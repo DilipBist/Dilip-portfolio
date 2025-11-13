@@ -23,7 +23,7 @@
 }
 
 .about_content {
-    margin-top: 520px;
+    margin-top: 480px;
     padding: 20px 0;
 }
 
@@ -115,7 +115,7 @@
     z-index: 1;
 }
 .skill_heading p{
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;

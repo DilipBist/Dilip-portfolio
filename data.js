@@ -26,7 +26,7 @@ export function renderSkills(skills) {
         </div>
         `;
     });
-//  <p>${skill.percentage}</p>
+    //  <p>${skill.percentage}</p>
     const skillContainer = document.getElementById('js_skill_Container');
     skillContainer.innerHTML = skillHtml;
 
@@ -37,24 +37,24 @@ export function renderSkills(skills) {
 
 // Array of projects
 export const projects = [
-    {
-        type: 'mini',
-        title: 'Todo List (JS)',
-        smalldescription: 'A basic Todo list where we can add the list with  date  and also delete the list manually.',
-        image: 'image/todo.png',
-        languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/Todo_List-JS-/',
-        codeLink: 'https://github.com/DilipBist/Todo_List-JS-'
-    },
-    {
-        type: 'mini',
-        title: 'Counter +/- (JS)',
-        smalldescription: 'we can increment and decrement by clicking to button and also icrement or decrement by the inputed value.',
-        image: 'image/counter.png',
-        languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/Counter-Mini-Project/',
-        codeLink: 'https://github.com/DilipBist/Counter-Mini-Project'
-    },
+    // {
+    //     type: 'mini',
+    //     title: 'Todo List (JS)',
+    //     smalldescription: 'A basic Todo list where we can add the list with  date  and also delete the list manually.',
+    //     image: 'image/todo.png',
+    //     languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
+    //     demoLink: 'https://dilipbist.github.io/Todo_List-JS-/',
+    //     codeLink: 'https://github.com/DilipBist/Todo_List-JS-'
+    // },
+    // {
+    //     type: 'mini',
+    //     title: 'Counter +/- (JS)',
+    //     smalldescription: 'we can increment and decrement by clicking to button and also icrement or decrement by the inputed value.',
+    //     image: 'image/counter.png',
+    //     languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
+    //     demoLink: 'https://dilipbist.github.io/Counter-Mini-Project/',
+    //     codeLink: 'https://github.com/DilipBist/Counter-Mini-Project'
+    // },
     {
         type: 'mini',
         title: 'News Website',
@@ -113,11 +113,11 @@ export const projects = [
     },
     {
         type: 'real',
-        title: 'Galway Web Desing',
-        smalldescription: 'Ireland-based website design company that offers professional website design and management on a monthly payment basis.',
-        image: 'image/galway.png',
-        languages: ['HTML', 'Bootstrap', 'jQuery'],
-        demoLink: 'https://galwaywebdesigns.ie/',
+        title: 'Himalayan Resturant',
+        smalldescription: 'Experience authentic Himalayan flavors, luxury dining, and elegant event spaces in Kathmandu. Taste tradition, celebrate in style at Himalayan Restro & Events.',
+        image: 'image/himalayan.png',
+        languages: ['HTML', 'CSS/Bootstrap', 'JavaScript'],
+        demoLink: 'https://himalayanrestro.com/',
         codeLink: '#',
         company: "Megaweblink"
     },
@@ -138,6 +138,17 @@ export const projects = [
         image: 'image/manya.png',
         languages: ['HTML', 'CSS/Bootstrap', 'JavaScript'],
         demoLink: 'https://store-manya.megaweblinkinc.com/',
+        codeLink: '#',
+        company: "Megaweblink"
+    },
+  
+    {
+        type: 'real',
+        title: 'Galway Web Desing',
+        smalldescription: 'Ireland-based website design company that offers professional website design and management on a monthly payment basis.',
+        image: 'image/galway.png',
+        languages: ['HTML', 'Bootstrap', 'jQuery'],
+        demoLink: 'https://galwaywebdesigns.ie/',
         codeLink: '#',
         company: "Megaweblink"
     },
