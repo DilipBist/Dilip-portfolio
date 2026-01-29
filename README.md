@@ -18,6 +18,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 - **HTML5**: Semantic and accessible markup.
 - **CSS3**: For styling and layout (with advanced features like Flexbox and Grid).
+- - **Bootstrap**: For Design and Layout.
 - **JavaScript**: To add interactivity and functionality.
 
 ---
