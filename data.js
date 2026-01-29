@@ -7,7 +7,8 @@ export const skills = [
     { name: 'Tailwind', image: './image/tailwind.png', percentage: '80%' },
     { name: 'JavaScript', image: './image/js.png', percentage: '60%' },
     { name: 'jQuery', image: './image/jquery.png', percentage: '60%' },
-    { name: 'React', image: './image/react.png', percentage: '60%' }
+    { name: 'React', image: './image/react.png', percentage: '60%' }  , 
+     { name: 'WordPress', image: './image/wordpress.png', percentage: '60%' }
 ];
 
 export function renderSkills(skills) {
@@ -37,120 +38,104 @@ export function renderSkills(skills) {
 
 // Array of projects
 export const projects = [
-    // {
-    //     type: 'mini',
-    //     title: 'Todo List (JS)',
-    //     smalldescription: 'A basic Todo list where we can add the list with  date  and also delete the list manually.',
-    //     image: 'image/todo.png',
-    //     languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
-    //     demoLink: 'https://dilipbist.github.io/Todo_List-JS-/',
-    //     codeLink: 'https://github.com/DilipBist/Todo_List-JS-'
-    // },
-    // {
-    //     type: 'mini',
-    //     title: 'Counter +/- (JS)',
-    //     smalldescription: 'we can increment and decrement by clicking to button and also icrement or decrement by the inputed value.',
-    //     image: 'image/counter.png',
-    //     languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
-    //     demoLink: 'https://dilipbist.github.io/Counter-Mini-Project/',
-    //     codeLink: 'https://github.com/DilipBist/Counter-Mini-Project'
-    // },
+
     {
-        type: 'mini',
-        title: 'News Website',
-        smalldescription: 'Fetching data from API(newsapi.org) and displaying data also with some filtering pages.',
-        image: 'image/newsjs.png',
-        languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/News_Fetch_Website/',
-        codeLink: 'https://github.com/DilipBist/News_Fetch_Website'
+        title: 'Himalayan Restaurant',
+        image: 'image/himalayan.png',
+        description:
+            'Official website for Himalayan Restaurant, showcasing authentic Himalayan cuisine, luxury dining experiences, and elegant event spaces. Designed to highlight brand identity, menu offerings, and customer engagement.',
+        filters: ['javascript'],
+        tech: ['HTML', 'Bootstrap', 'JavaScript'],
+
+        demoLink: 'https://himalayanrestro.com/',
+        codeLink: '#',
+        company: 'Mega Web Link'
+    },
+
+    {
+        title: 'Maatson',
+        image: 'image/maatson.png',
+        description:
+            'Maatson Trucking School website designed to promote CDL training programs, hands-on driving experience, and career support services, delivering clear information and a professional online presence.',
+        filters: ['wordpress'],
+        tech: ['HTML', 'Bootstrap', 'jQuery', 'WordPress'],
+
+        demoLink: 'https://maatson.megaweblinkinc.com/',
+        codeLink: '#',
+        company: 'Mega Web Link'
     },
     {
-        type: 'main',
+        title: 'Irish',
+        image: 'image/irish.png',
+        description:
+            'Professional website for Irish Flooring, showcasing high-quality flooring installation and finishing services for residential and commercial projects, with a focus on craftsmanship and reliability.',
+        filters: ['wordpress'],
+        tech: ['HTML', 'Bootstrap', 'jQuery', 'WordPress'],
+
+        demoLink: 'https://demo.wordpress.megaweblinks.com/irish/',
+        codeLink: '#',
+        company: 'Mega Web Link'
+    },
+
+    {
+        title: 'Manya E-commerce',
+        image: 'image/manya.png',
+        description:
+            'Manya is a modern e-commerce platform offering quality products, seamless navigation, and a user-friendly shopping experience with a focus on performance and accessibility.',
+        filters: ['javascript'],
+        tech: ['HTML', 'Bootstrap', 'JavaScript'],
+
+        demoLink: 'https://store-manya.megaweblinkinc.com/',
+        codeLink: '#',
+        company: 'Mega Web Link'
+    },
+
+    {
+        title: 'Galway Web Design',
+        image: 'image/galway.png',
+        description:
+            'Corporate website for Galway Web Design, highlighting professional website design and monthly management services tailored for businesses seeking reliable digital solutions.',
+        filters: ['javascript'],
+        tech: ['HTML', 'Bootstrap', 'jQuery'],
+        demoLink: 'https://galwaywebdesigns.ie/',
+        codeLink: '#',
+        company: 'Mega Web Link'
+    },
+
+
+    {
         title: 'E-commerce Website',
         image: 'image/s.png',
-        languages: ['HTML', 'Vanilla CSS', 'Responsive Design'],
-        smalldescription: 'Users can see the products, view the product according to category (like men, women, etc).',
+        description:
+            'Personal e-commerce project demonstrating product listing, category-based, and responsive layout using modern front-end development practices.',
+        filters: ['javascript'],
+        tech: ['HTML', 'Vanilla CSS', 'Responsive Design'],
+
         demoLink: 'https://dilipbist.github.io/E-commerce-website/index.html',
         codeLink: 'https://github.com/DilipBist/E-commerce-website'
     },
+
     {
-        type: 'main',
         title: 'Clone Website',
-        smalldescription: 'clone website of digitalshauji. Developed using React and TailwindCSS',
         image: 'image/electronic.png',
-        languages: ['React', 'Tailwind CSS', 'Responsive Design'],
+        description:
+            'React-based website clone developed to demonstrate component-based architecture, responsive design, and modern UI implementation using Tailwind CSS.',
+        filters: ['react'],
+        tech: ['React', 'Tailwind CSS', 'Responsive Design'],
+
         demoLink: 'https://electronic-e-commerce.vercel.app/',
         codeLink: 'https://github.com/DilipBist/Electronic-e-commerce'
     },
 
     {
-        type: 'mini',
-        title: 'Food Recipe Search Website',
-        smalldescription: 'Fetching data from API and also with the search functionality.',
-        image: 'image/food_search.png',
-        languages: ['HTML', 'Vanilla CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/Food_Recipes_Website/',
-        codeLink: 'https://github.com/DilipBist/Food_Recipes_Website'
-    },
-
-    {
-        type: 'main',
         title: 'Ice-Cream Website',
-        smalldescription: 'Website where user can view the ice-cream details and also know about the company.',
         image: 'image/ice.png',
-        languages: ['HTML', 'SCSS', 'Vanilla JS'],
+        description:
+            'Interactive ice-cream website showcasing product details and company information, built with a clean UI and smooth user experience across devices.',
+        filters: ['javascript'],
+        tech: ['HTML', 'SCSS', 'Vanilla JS'],
+
         demoLink: 'https://ice-cream-website-seven.vercel.app/',
         codeLink: 'https://github.com/DilipBist/Ice-cream-Website'
-    },
-    {
-        type: 'main',
-        title: 'Home Page Desing ',
-        smalldescription: 'Home page desing of the car rentail and service website design',
-        image: 'image/homepagedesign.png',
-        languages: ['HTML', 'Tailwind CSS', 'Vanilla JS'],
-        demoLink: 'https://dilipbist.github.io/CarRental-HomePage/',
-        codeLink: 'https://github.com/DilipBist/CarRental-HomePage'
-    },
-    {
-        type: 'real',
-        title: 'Himalayan Resturant',
-        smalldescription: 'Experience authentic Himalayan flavors, luxury dining, and elegant event spaces in Kathmandu. Taste tradition, celebrate in style at Himalayan Restro & Events.',
-        image: 'image/himalayan.png',
-        languages: ['HTML', 'CSS/Bootstrap', 'JavaScript'],
-        demoLink: 'https://himalayanrestro.com/',
-        codeLink: '#',
-        company: "Megaweblink"
-    },
-    {
-        type: 'real',
-        title: 'Maatson',
-        smalldescription: 'Maatson Trucking School offers CDL training, hands-on experience, and career support for your success in trucking.',
-        image: 'image/maatson.png',
-        languages: ['HTML', 'CSS/Bootstrap', 'jQuery', 'Wordpress'],
-        demoLink: 'https://maatson.megaweblinkinc.com/',
-        codeLink: '#',
-        company: "Megaweblink"
-    },
-    {
-        type: 'real',
-        title: 'Manya E-commerce',
-        smalldescription: 'Manya is your one-stop e-commerce destination offering quality products, great deals, and a seamless shopping experience.',
-        image: 'image/manya.png',
-        languages: ['HTML', 'CSS/Bootstrap', 'JavaScript'],
-        demoLink: 'https://store-manya.megaweblinkinc.com/',
-        codeLink: '#',
-        company: "Megaweblink"
-    },
-  
-    {
-        type: 'real',
-        title: 'Galway Web Desing',
-        smalldescription: 'Ireland-based website design company that offers professional website design and management on a monthly payment basis.',
-        image: 'image/galway.png',
-        languages: ['HTML', 'Bootstrap', 'jQuery'],
-        demoLink: 'https://galwaywebdesigns.ie/',
-        codeLink: '#',
-        company: "Megaweblink"
-    },
+    }
 ];
-

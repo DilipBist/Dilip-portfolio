@@ -10,12 +10,13 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- style sheets  -->
-    <link rel="stylesheet" href="about.css">
+    <!-- <link rel="stylesheet" href="about.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="home">
 
     <!-- ********* HEADER STARTS HERE ************** -->
     <header>
@@ -28,12 +29,12 @@
             <div class="nav_links capitalize d_flex g_30">
                 <ul class="d_flex g_30">
                     <li>
-                        <a href="" class="d_flex g_5">
+                        <a href="#home" class="d_flex g_5">
                             <i class='bx bx-home'></i> home
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="d_flex g_5">
+                        <a href="#about" class="d_flex g_5">
                             <i class='bx bxs-face'></i>about
                         </a>
                     </li>
@@ -75,20 +76,29 @@
     <!-- ************ HERO SECTION STARTS HERE ************* -->
     <section class="hero_section container">
         <div class="hero_left" data-aos="fade-down-right" data-aos-duration="3000">
-            <p class="name">Hello! <br>I am Dilip Bist</p>
-            <p class="typing-effect capitalize occupation">
+            <p class="name">Hi, I'm Dilip Bist</p>
+            <!-- <p class="typing-effect capitalize occupation">
                 <span id="typed-text"></span>
-            </p>
+            </p> -->
+            <h1><span id="typing"></span> </h1>
             <div class="self_description">
-                <p>I'm a Junior Front-End Developer with hands-on experience in creating responsive and user-focused websites. Skilled in
-                HTML, CSS, JavaScript, and jQuery, I specialize in transforming design concepts into clean, functional, and visually
-                appealing interfaces. I'm passionate about crafting seamless digital experiences with attention to detail, performance,
-                and modern web standards.</p>
+                <p>
+                    Front-End Developer with one year of professional experience building responsive and user-focused
+                    web
+                    applications using HTML, CSS, JavaScript, Bootstrap, jQuery, and WordPress.
+                </p>
+
+                <p>
+                    Experienced in delivering real-world client projects, creating clean, scalable interfaces, and
+                    developing
+                    custom WordPress solutions with a strong focus on performance, usability, and modern web standards.
+                </p>
             </div>
+
+
             <div class="download_cv d_flex g_30">
                 <button>
-                    <a href="./Dilip-Bist(Frontend).pdf" download="Dilip-Bist(Frontend)">Download CV <i
-                            class='bx bxs-download'></i></a>
+                    <a href="./Dilip-Bist.pdf" download="Dilip-Bist">Download CV <i class='bx bxs-download'></i></a>
                 </button>
                 <div class="social_links d_flex g_20">
                     <a href="https://www.facebook.com/profile.php?id=100010316410954" target="_blank"><i
@@ -130,37 +140,162 @@
 
 
     <!-- *********** PROJECT SECTION STARTS HERE *********  -->
-
     <section class="project_section" id="project_section">
+        <div class="container">
 
-        <p class="project_heading" data-aos="zoom-in-down" data-aos-duration="1000">Industry Projects (Real Projects)
-        </p>
-        <div class="real_world_projects project_container container" id="real_project_container" data-aos="fade-up"
-            data-aos-duration="1000">
+            <!-- FILTER BUTTONS -->
+            <div class="project_filter_btns d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                <button class="active" data-filter="*">All</button>
+                <button data-filter=".react">React</button>
+                <button data-filter=".javascript">JavaScript</button>
+                <button data-filter=".wordpress">WordPress</button>
+            </div>
 
-        </div>
-
-        <p class="project_heading" data-aos="zoom-in-down" data-aos-duration="1000">My Projects</p>
-        <div class="project_container container" id="main_project_container" data-aos="fade-up" data-aos-duration="1000">
-        
-        </div>
-
-        <p class="project_heading" data-aos="zoom-in-down" data-aos-duration="1000"> Mini projects</p>
-        <div class="project_container container" id="mini_project_container" data-aos="fade-up"
-            data-aos-duration="1000">
-
+            <!-- PROJECTS -->
+            <div class="row g-4" id="project-container"></div>
 
         </div>
-
     </section>
+
 
     <!-- **************** PROJECT SECTION ENDS HERE *****************  -->
 
 
+    <!-- =========== about me section ================ -->
+        <section class="about_section" id="about">
+            <div class="about_content">
+                <p class="resume_heading mb-4">About Me</p>
+                <div class="container" style="margin-top: 44px; margin-bottom: 24px;">
+                    <div class="self_description">
+                        <p>Hi! I’m Dilip Bist, a passionate Front-End Developer with hands-on experience in crafting
+                            responsive,
+                            user-friendly, and visually appealing websites. Over the past few months, I’ve built multiple web projects, turning
+                            creative ideas and Figma designs into fully functional interfaces that focus on both performance
+                            and user experience.
+                        </p>
+                        <p>I have a strong foundation in HTML5, CSS3, JavaScript, and jQuery, along with experience using
+                            Bootstrap and Tailwind
+                            CSS to build responsive layouts efficiently. I enjoy working with Figma to translate UI/UX
+                            designs into clean,
+                            maintainable code — ensuring that every element looks great and works seamlessly across devices
+                            and browsers.</p>
+                        <p>Beyond coding, I’m deeply interested in understanding how design and functionality come together
+                            to create smooth,
+                            engaging web experiences. My workflow involves writing clean, organized, and reusable code,
+                            optimizing performance, and
+                            following modern web standards.</p>
+                        <p>I’ve also explored WordPress development, customizing themes and building front-end interfaces
+                            using PHP and CSS, which
+                            has helped me understand how front-end and back-end systems connect.
+        
+                            I’m always eager to learn new technologies, improve my design-to-code process, and grow into a
+                            more complete developer.
+                            My goal is to contribute to a creative team where I can continue building modern, impactful web
+                            solutions while
+                            improving my skills every day.</p>
+                        <p>When I’m not coding, I enjoy exploring new UI trends, improving my portfolio, and experimenting
+                            with interactive website
+                            animations and effects.</p>
+                    </div>
+                </div>
+        
+                <div class="experience container">
+                    <div class="left">
+                        <div class="education_heading">
+                            <p>education</p>
+                        </div>
+                        <div class="timeline_area">
+                            <div class="timeline_container g_30">
+                                <div class="hat">
+                                    <i class='bx bxs-graduation'></i>
+                                </div>
+                                <div class="edu_des">
+                                    <p>2073 BS</p>
+                                    <p> <strong>SEE Passout</strong></p>
+                                    <p>Shree Baijanath Secondary</p>
+                                </div>
+                            </div>
+        
+                            <div class="timeline_container g_30">
+                                <div class="hat">
+                                    <i class='bx bxs-graduation'></i>
+                                </div>
+                                <div class="edu_des">
+                                    <p>2074 BS - 2076 BS</p>
+                                    <p> <strong>+2(Science)</strong></p>
+                                    <p>Radient Secondary</p>
+                                </div>
+                            </div>
+        
+                            <div class="timeline_container g_30">
+                                <div class="hat">
+                                    <i class='bx bxs-graduation'></i>
+                                </div>
+                                <div class="edu_des">
+                                    <p>2076 BS - 2081 BS</p>
+                                    <p> <strong>Bachelor In Computer Science And Information Technology</strong></p>
+                                    <p>FarWestern University</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="right">
+                        <div class="work_heading">
+                            <p>Work experience</p>
+                        </div>
+                        <div class="timeline_area">
+                            <div class="timeline_container g_30">
+                                <div class="hat">
+                                    <i class='bx bxs-briefcase'></i>
+                                </div>
+                                <div class="edu_des">
+                                    <p>Frontend Developer</p>
+                                    <p class="c_work"><a href="https://megaweblink.com.np/" target="_blank">Mega Web
+                                            Link</a></p>
+                                    <ul>
+                                        <li>
+                                            Gained hands-on experience building responsive and interactive user interfaces
+                                            using
+                                            HTML, CSS, JavaScript, jQuery, and modern front-end practices.
+                                        </li>
+                                        <li>
+                                            Worked on improving UI/UX, ensuring cross-browser compatibility, and writing
+                                            clean,
+                                            maintainable code.
+                                        </li>
+                                        <li>
+                                            Collaborated with the team on WordPress theme development, assisting in
+                                            customizing
+                                            themes, styling components, and integrating front-end designs into WordPress.
+                                        </li>
+                                        <li>
+                                            Supported content updates, layout customization, and performance improvements
+                                            within
+                                            WordPress-based websites.
+                                        </li>
+                                        <li>
+                                            Followed industry best practices, version control workflows, and team-based
+                                            development processes.
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    <!-- =========== about me section ================ -->
+
     <!-- ************* CONTACT SECTION STARTS HERE ***********  -->
 
-    <section class="contact_section" id="contact" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container">
+    <section class="contact_section" id="contact">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <p class="contact_heading" data-aos="fade-up" data-aos-delay="100">Contact</p>
             <div class="flex">
                 <!-- LEFT (Form) -->
@@ -225,8 +360,8 @@
 
 
     <!-- **************** FOOTER SECTION ********* -->
-    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
-        <div class="container footer_content">
+    <footer>
+        <div class="container footer_content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
             <!-- Logo + Email -->
             <div class="logo g_20" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <p>D<span style="padding-left: 5px;">}</span></p>
@@ -288,6 +423,8 @@
 
     <!-- AOS js link  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery.mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- js link  -->
     <script type="module" src="script.js"></script>
 

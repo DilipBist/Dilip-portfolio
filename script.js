@@ -55,7 +55,6 @@ window.onscroll = function () {
 const menuBar = document.querySelector('.menu_bar i');
 const navLinks = document.querySelector('.nav_links ul');
 menuBar.addEventListener('click', () => {
-    // console.log("Button Clicked");
     menuBar.classList.toggle('bx-x');
     menuBar.style.transform = menuBar.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
     navLinks.classList.toggle('show');
@@ -93,8 +92,8 @@ currentDate.innerHTML = `<b> ${year} ${month}</b>`;
 const typedText = document.getElementById("typed-text");
 const text = "Frontend Web Developer & Designer";
 let index = 0;
-let typingSpeed = 200;  // Speed for typing
-let deletingSpeed = 50;  // Speed for deleting
+let typingSpeed = 150;  // Speed for typing
+let deletingSpeed = 30;  // Speed for deleting
 let pauseDuration = 500; // Duration to pause after typing the full text
 
 if (typedText) { // Check if element exists
@@ -125,56 +124,67 @@ if (typedText) { // Check if element exists
 renderSkills(skills);
 
 
-// load the projects usign JavaScript 
-function renderProjectData(containerId, type) {
-    let projectContainer = document.getElementById(containerId);
-    let projectHtml = '';
+// Render projects 
+function renderProjectData() {
+    const container = document.getElementById('project-container');
+    if (!container) return;
 
-    // Filter and loop through projects
-    projects
-        .filter(project => project.type === type)
-        .forEach((project, index) => {
-            let languageHtml = '<p class="language_used">';
-            project.languages.forEach(language => {
-                languageHtml += `<span>${language}</span>`;
-            });
-            languageHtml += '</p>';
+    container.innerHTML = projects.map((project, index) => {
+        return `
+        <div class="col-md-6 col-lg-4 mix ${project.filters.join(' ')}">
 
-            let companyName = project.company
-                ? `<p class="company_name">Company: <a href="https://megaweblink.com.np/">${project.company}</a></p>`
-                : "";
+            <div class="product_list_parent">
 
-            // Add AOS fade-up animation with staggered delay
-            projectHtml += `
-            <div class="product_list_parent" 
-                 data-aos="fade-up" 
-                 data-aos-duration="1000" 
-                 data-aos-delay="${index * 200}">
                 <div class="project_list">
-                    <img src="${project.image}" alt="">
+                    <img src="${project.image}" alt="${project.title}">
+
                     <div class="product_content">
-                        ${languageHtml}
+                        <p class="language_used">
+                            ${project.tech.map(t => `<span>${t}</span>`).join('')}
+                        </p>
+
                         <div class="code_btn">
-                            <button><a href="${project.demoLink}" target="_blank">project demo</a></button>
-                            <button><a href="${project.codeLink}" target="_blank">source code</a></button>
+                            <a href="${project.demoLink}" target="_blank">Project Demo</a>
+                            <a href="${project.codeLink}" target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div>
-                ${companyName}
-                <p>${project.title}</p>
-                <small>${project.smalldescription}</small>
+
+                <div class="d-flex align-items-center justify-content-center mt-3 gap-1 flex-column">
+                    <p>${project.title}</p>
+                    ${project.company ? `
+                        <p>
+                            <strong>
+                                <a href="https://megaweblink.com.np/" target="_blank">
+                                    ${project.company}
+                                </a>
+                            </strong>
+                        </p>` : ''}
+                </div>
+
+                <small>${project.description}</small>
             </div>
-            `;
-        });
-
-    projectContainer.innerHTML = projectHtml;
-
-    // Reinitialize AOS after adding new elements
-    AOS.refresh();
+        </div>
+        `;
+    }).join('');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    renderProjectData('mini_project_container', 'mini');
-    renderProjectData('main_project_container', 'main');
-    renderProjectData('real_project_container', 'real');
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderProjectData();
+    var mixer = mixitup('#project-container', {
+        selectors: {
+            target: '.mix'
+        },
+        animation: {
+            duration: 500
+        }
+    });
+
+    new Typed("#typing", {
+        strings: ["Front-End Developer", "Web Designer"],
+        typeSpeed: 70,
+        backSpeed: 40,
+        loop: true
+    });
 });
