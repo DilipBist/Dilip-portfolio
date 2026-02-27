@@ -89,35 +89,35 @@ const month = monthNames[new Date().getMonth()];
 currentDate.innerHTML = `<b> ${year} ${month}</b>`;
 
 // TYPING EFFECT 
-const typedText = document.getElementById("typed-text");
-const text = "Frontend Web Developer & Designer";
-let index = 0;
-let typingSpeed = 150;  // Speed for typing
-let deletingSpeed = 30;  // Speed for deleting
-let pauseDuration = 500; // Duration to pause after typing the full text
+// const typedText = document.getElementById("typed-text");
+// const text = "Frontend Web Developer & Designer";
+// let index = 0;
+// let typingSpeed = 150;  // Speed for typing
+// let deletingSpeed = 30;  // Speed for deleting
+// let pauseDuration = 500; // Duration to pause after typing the full text
 
-if (typedText) { // Check if element exists
-    function type() {
-        if (index < text.length) {
-            typedText.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(type, typingSpeed);
-        } else {
-            setTimeout(deleteText, pauseDuration);
-        }
-    }
+// if (typedText) { // Check if element exists
+//     function type() {
+//         if (index < text.length) {
+//             typedText.innerHTML += text.charAt(index);
+//             index++;
+//             setTimeout(type, typingSpeed);
+//         } else {
+//             setTimeout(deleteText, pauseDuration);
+//         }
+//     }
 
-    function deleteText() {
-        if (index > 0) {
-            typedText.innerHTML = text.substring(0, index - 1);
-            index--;
-            setTimeout(deleteText, deletingSpeed);
-        } else {
-            setTimeout(type, pauseDuration);
-        }
-    }
-    type();
-}
+//     function deleteText() {
+//         if (index > 0) {
+//             typedText.innerHTML = text.substring(0, index - 1);
+//             index--;
+//             setTimeout(deleteText, deletingSpeed);
+//         } else {
+//             setTimeout(type, pauseDuration);
+//         }
+//     }
+//     type();
+// }
 
 // load the skills using the JavaScript 
 
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     new Typed("#typing", {
-        strings: ["Front-End Developer", "Web Designer"],
+        strings: ["Front-End Developer", "WordPress Developer"],
         typeSpeed: 70,
         backSpeed: 40,
         loop: true

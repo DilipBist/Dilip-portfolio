@@ -52,6 +52,7 @@ export const projects = [
         company: 'Mega Web Link'
     },
 
+
     {
         title: 'Maatson',
         image: 'image/maatson.png',
@@ -73,6 +74,19 @@ export const projects = [
         tech: ['HTML', 'Bootstrap', 'jQuery', 'WordPress'],
 
         demoLink: 'https://demo.wordpress.megaweblinks.com/irish/',
+        codeLink: '#',
+        company: 'Mega Web Link'
+    },
+
+    {
+        title: 'Grill House',
+        image: 'image/grillhouse.png',
+        description:
+            'Official website for Grill House, showcasing authentic grilled cuisine, premium dining experiences, and elegant event spaces. Designed to highlight brand identity, menu offerings, and customer engagement.',
+        filters: ['wordpress'],
+        tech: ['HTML', 'Bootstrap', 'JavaScript', 'wordpress'],
+
+        demoLink: 'https://demo.wordpress.megaweblinks.com/grillhouse',
         codeLink: '#',
         company: 'Mega Web Link'
     },
