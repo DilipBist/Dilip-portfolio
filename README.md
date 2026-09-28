@@ -26,6 +26,6 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 ## 🚀 Live Demo
 
 Check out the live demo of my portfolio:  
-[Portfolio Link](https://dilipbist.github.io/Dilip-portfolio/)
+[Portfolio Link](https://dilipbist.github.io/dilip/)
 
 ---
